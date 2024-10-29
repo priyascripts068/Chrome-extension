@@ -1,0 +1,84 @@
+.popup{
+    min-width: 350px;
+    min-height: 250px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    padding: 10px;
+}
+h1{
+    font-size: 1.75rem;
+    text-align: center;
+}
+.yellow{
+    color: rgb(232, 232, 94);
+}
+p{
+    font-size: 1rem;
+}
+.button{
+    background-color: #fdfca3;
+    height:2rem;
+    width:4rem;
+    border-radius:30px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+}
+@keyframes transformtoblue{
+    0%{
+        background-color: #fdfca3;
+    }
+    100%{
+        background-color: #8abff0;
+    }
+}
+@keyframes transformtoyellow{
+    0%{
+        background-color:#8abff0 ;
+    }
+    100%{
+        background-color: #fdfca3;
+    }
+}
+@keyframes movecircleright{
+    0%{
+        left:0%;
+        transform: translateX(0);
+        background-color: #fdfca3;
+    }
+    100%{
+        left:100%;
+        transform: translateX(-100%);
+        background-color: #8abff0;
+    }
+}
+@keyframes movecircleleft{
+    0%{
+        right:0%;
+        transform: translateX(100%);
+        background-color: #8abff0;
+    }
+    100%{
+        right:100%;
+        transform: translateX(0);
+        background-color: #fdfca3;
+    }
+}
+.half{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.circle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(255,213,0);
+    pointer-events: none;
+    transition: 1s;
+}
